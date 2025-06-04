@@ -2,7 +2,7 @@
  * Plugin Name: WooCommerce Custom Subscriptions
  * Plugin URI: https://github.com/adamvarmuza/custom-subscriptions
  * Description: Přidává předplatné jako vlastnost produktu.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Adam Varmuža
  * Author URI: https://www.suseneprazene.cz
  */
