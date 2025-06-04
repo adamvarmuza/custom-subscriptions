@@ -85,9 +85,3 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     __FILE__,
     'custom-subscriptions'
 );
-
-// Pokud je repozitář soukromý, můžeš přidat:
-$myUpdateChecker->setAuthentication('TVUJ_GITHUB_TOKEN');
-
-// Nepovinné: použít konkrétní branch
-$myUpdateChecker->setBranch('main');
