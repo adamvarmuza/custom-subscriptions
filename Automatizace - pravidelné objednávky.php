@@ -7,7 +7,6 @@
  * Author URI: https://www.suseneprazene.cz
  */
 
-
 if (!defined('ABSPATH')) exit;
 
 // Přidání polí do produktu
@@ -78,3 +77,17 @@ add_action('woocommerce_checkout_create_order_line_item', function ($item, $cart
 
 // Možné napojení na WP Swings Subscriptions – zde by probíhalo vytvoření skutečného subscription objektu
 // (např. pomocí wc_create_order() + hooks pluginu), to přidáme dle zpětné vazby.
+
+require plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
+
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/TVUJ_UZIVATEL/custom-subscriptions/',
+    __FILE__,
+    'custom-subscriptions'
+);
+
+// Pokud je repozitář soukromý, můžeš přidat:
+$myUpdateChecker->setAuthentication('TVUJ_GITHUB_TOKEN');
+
+// Nepovinné: použít konkrétní branch
+$myUpdateChecker->setBranch('main');
