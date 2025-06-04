@@ -1,10 +1,12 @@
-<?php
 /**
  * Plugin Name: WooCommerce Custom Subscriptions
- * Description: Přidává předplatné jako volitelnou vlastnost běžných produktů s volbou intervalu a délky. Napojení na WP Swings Subscriptions.
+ * Plugin URI: https://github.com/adamvarmuza/custom-subscriptions
+ * Description: Přidává předplatné jako vlastnost produktu.
  * Version: 1.0.0
- * Author: ChatGPT / Adam Varmuža
+ * Author: Adam Varmuža
+ * Author URI: https://www.suseneprazene.cz
  */
+
 
 if (!defined('ABSPATH')) exit;
 
